@@ -16,18 +16,24 @@ public class App {
         String dif = scanner.nextLine();
 
         double maxAttempts;
+        int range;
         if (dif.equals("f")) {
             System.out.println("Você escolheu a dificuldade fácil!");
             maxAttempts = 15;
+            range = 100;
+            
         } else if (dif.equals("m")) {
             System.out.println("Você escolheu a dificuldade média!");
             maxAttempts = 10;
+            range = 200;
         } else if (dif.equals("d")) {
             System.out.println("Você escolheu a dificuldade difícil!");
             maxAttempts = 5;
+            range = 300;
         } else {
             System.out.println("Você não escolheu nenhuma dificuldade, então vamos jogar na dificuldade média!");
             maxAttempts = 10;
+            range = 200;
         }
 
         boolean playAgain = true;
@@ -35,7 +41,7 @@ public class App {
         while (playAgain) {
             // loop para gerar o número
             Random randomNumber = new Random();
-            int numberComputer = randomNumber.nextInt(100) + 1; // essa parte gera um número entre 1 e 100.
+            int numberComputer = randomNumber.nextInt(range) + 1; // essa parte gera um número entre 1 e 100.
 
             boolean acertou = false;
             int numberGuesses = 0;
@@ -43,7 +49,7 @@ public class App {
 
             // loop do número do usuário    
             while (!acertou) {
-                System.out.println("Chuta um número entre 1 e 100 - Você tem " + (maxAttempts - numberGuesses) + " tentativas restantes");
+                System.out.println("Chuta um número entre 1 e " + range + " - Você tem " + (maxAttempts - numberGuesses) + " tentativas restantes");
                 int userGuess = Integer.valueOf(scanner.nextLine());
                 numberGuesses = numberGuesses + 1;
                 if (numberGuesses == maxAttempts) {
