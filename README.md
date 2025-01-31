@@ -1,18 +1,15 @@
-## Getting Started
+## Primeiro projeto
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é meu primeiro projeto usando JAVA e programação no geral. É bem bobo, porém foi legal de fazer.
 
-## Folder Structure
+## Features do joguinho
 
-The workspace contains two folders by default, where:
+- Sistema de pontuação e também de contagem de tentativas.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features a serem adicionadas:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Sistema de pontuação global;
+- Sistema de dificuldade;
+- Interface do usuário.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
